@@ -13,10 +13,7 @@ export default function Navbar() {
     <div className="navbar  h-[80px]  ">
       <div className=" flex items-center justify-between py-[10px] px-[30px] ">
         <div className=" flex items-center gap-6 ">
-          <div className="item ">
-            <img src="/img/en.png" alt="" />
-            <KeyboardArrowDownIcon />
-          </div>
+          
           <div className="item">
             <span>USD</span>
             <KeyboardArrowDownIcon />
@@ -32,7 +29,7 @@ export default function Navbar() {
           </div>
         </div>
         <div className=" text-base ">
-          <Link className ="link" to="/">LAMASTORE</Link>
+          <Link className ="link" to="/">shoop</Link>
         </div>
         <div className="right flex items-center gap-6">
           
@@ -47,7 +44,7 @@ export default function Navbar() {
           </div>
           <div className=" flex items-center gap-4 cursor-pointer text-red-500">
             <SearchIcon/>
-            <PersonOutlineOutlinedIcon/>
+         
             <FavoriteBorderOutlinedIcon/>
             <div className=" relative" onClick={()=>setOpen(!open)}>
               <ShoppingCartOutlinedIcon/>

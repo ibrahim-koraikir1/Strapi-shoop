@@ -10,6 +10,19 @@
   .iten{
     @apply flex-1 flex flex-col gap-3 text-justify text-[14px] text-gray-800 ;
   }
+  .col{
+    @apply  flex  flex-1 flex-col gap-3
+  }
+  
+  .row{
+    @apply flex flex-1 gap-[10px] relative overflow-hidden
+  }
+  .imgl{
+    @apply w-full h-full object-cover
+  }
+  .btnl{
+    @apply absolute min-w-[100px] w-fit h-12 p-[10px] m-auto bottom-0 top-0 left-0 right-0 border-none cursor-pointer font-bold bg-white 
+  }
 }
 
 :root {
@@ -28,7 +41,9 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
+.imgflex {
+  flex: 3;
+}
 a {
   font-weight: 500;
   color: #646cff;
