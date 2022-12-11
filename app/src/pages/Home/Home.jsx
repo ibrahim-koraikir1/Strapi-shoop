@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className='overflow-hidden'>
       <Slider/>
-      <FeaturedProducts/>
+      <FeaturedProducts type="featured"/>
       <Categories/>
     </div>
   )

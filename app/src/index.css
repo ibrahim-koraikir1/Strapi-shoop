@@ -44,6 +44,14 @@
 .imgflex {
   flex: 3;
 }
+
+
+.image:hover .secondImg{
+    z-index: 2;
+}
+ .mainImg{
+      z-index: 1;
+    }
 a {
   font-weight: 500;
   color: #646cff;
