@@ -41,7 +41,7 @@ export default function Footer() {
       </div>
       <div className=" flex items-center justify-between mt-12">
         <div className="flex items-center ">
-          <span className=" text-[#2879fe] text-[24px] font-bold">Lamastore</span>
+      
           <span className="ml-5 text-xs text-gray-600">
             © Copyright 2023. All Rights Reserved
           </span>

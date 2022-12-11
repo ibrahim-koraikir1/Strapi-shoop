@@ -12,13 +12,16 @@ export default function Navbar() {
   return (
     <div className="navbar  h-[80px]  ">
       <div className=" flex items-center justify-between py-[10px] px-[30px] ">
-        <div className=" flex items-center gap-6 ">
-          
+        <div className=" flex items-center gap-6  text-base">
+           <Link className ="link" to="/">shoop</Link>
           <div className="item">
             <span>USD</span>
             <KeyboardArrowDownIcon />
           </div>
-          <div className="item">
+        
+        </div>
+        <div className="  flex items-center gap-6  ml-10 ">
+            <div className="item">
             <Link className ="link" to="/products/1">Women</Link>
           </div>
           <div className="item">
@@ -27,9 +30,7 @@ export default function Navbar() {
           <div className="item">
             <Link className ="link" to="/products/3">Children</Link>
           </div>
-        </div>
-        <div className=" text-base ">
-          <Link className ="link" to="/">shoop</Link>
+         
         </div>
         <div className="right flex items-center gap-6">
           
