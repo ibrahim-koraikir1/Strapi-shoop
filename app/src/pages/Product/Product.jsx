@@ -21,7 +21,7 @@ export default function Product() {
               <img
               className='  w-full h-[150px ] object-cover cursor-pointer mb-2'
                 src={
-                 "http://localhost:1337/"+
+                 "http://localhost:1337"+
                   data?.attributes?.img?.data?.attributes?.url
                 }
                 alt=""
@@ -30,7 +30,7 @@ export default function Product() {
               <img
                 className='  w-full h-[150px ] object-cover cursor-pointer mb-2'
                 src={
-                  "http://localhost:1337/" +
+                  "http://localhost:1337" +
                   data?.attributes?.img2?.data?.attributes?.url
                 }
                 alt=""
@@ -41,7 +41,7 @@ export default function Product() {
               <img
               className=' w-full max-h-[800px] object-cover'
                 src={
-                 "http://localhost:1337/"+
+                 "http://localhost:1337"+
                   data?.attributes[selectedImg]?.data?.attributes?.url
                 }
                 alt=""
