@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 export default function Card({ item }) {
+  console.log(item )
   return (
     <Link className="link" to={`/product/${item.id}`}>
       <div className="w-[280px] flex flex-col gap-2 ">
