@@ -37,7 +37,7 @@ export default function Product() {
                 onClick={(e) => setSelectedImg("img2")}
               />
             </div>
-            <div className="flex-5">
+            <div className="flex-3">
               <img
               className=' w-full max-h-[800px] object-cover'
                 src={
@@ -48,7 +48,7 @@ export default function Product() {
               />
             </div>
           </div>
-          <div className="  flex-1 flex flex-col gap-8s">
+          <div className="  flex-1 flex flex-col gap-8">
             <h1>{data?.attributes?.title}</h1>
             <span className=" text-3xl text-[#2879fe] font-medium">${data?.attributes?.price}</span>
             <p className='  text-lg font-light '>{data?.attributes?.desc}</p>
