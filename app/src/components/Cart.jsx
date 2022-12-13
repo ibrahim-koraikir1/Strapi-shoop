@@ -1,17 +1,22 @@
 import React from 'react'
+import DeleteOutlinedIcon from "@mui/icons-material/DeleteOutlined";
 
 export default function Cart() {
+
+    const  handlePayment = ()=>{
+        console.log('item')
+    }
   return (
-    <div className=" absolute right-[20px] top-[80px] -z-50 bg-white p-[20px]">
+    <div className="absolute  right-[20px]  top-[80px] z-50 bg-white p-[40px]">
       <h1>Products in your cart</h1>
       
-        <div className=" 30px; flex items-center gap-5 mb-8" key={item.id}>
+        <div className="  flex items-center justify-between gap-5 mb-8">
           <img className='w-[80px] h-[100px] object-cover' src={'https://www.netlify.com/img/global/badges/netlify-light.svg'} alt="" />
-          <div className=" text-lg font-medium">
+          <div >
             <h1  className=" text-lg font-medium"></h1>
             <p className=' text-gray-700 mb-3 text-sm'>33</p>
             <div className="text-[#2879fe]">
-             33
+             44
             </div>
           </div>
           <DeleteOutlinedIcon

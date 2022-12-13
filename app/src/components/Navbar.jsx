@@ -5,12 +5,13 @@ import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { Link } from "react-router-dom";
+import Cart from './Cart';
 
 export default function Navbar() {
       const [open,setOpen] = useState(false)
   
   return (
-    <div className="navbar  h-[80px]  ">
+    <div className="navbar relative h-[80px]  ">
       <div className=" flex items-center justify-between py-[10px] px-[30px] ">
         <div className=" flex items-center gap-6  text-base">
            <Link className ="link" to="/">shoop</Link>
@@ -54,7 +55,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      {open && <h1>h</h1>}
+      {open && <Cart/>}
     </div>
   )
 }
