@@ -4,10 +4,15 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder"
 import BalanceIcon from "@mui/icons-material/Balance"
 import useFetch from "../../hooks/useFetch"
 import { useParams } from "react-router-dom"
+
+import { useDispatch } from "react-redux"
+import { addToCart } from "../../redux/cartReducer"
+
 export default function Product() {
-    const id = useParams().id;
+  const id = useParams().id;
   const [selectedImg, setSelectedImg] = useState("img");
   const [quantity, setQuantity] = useState(1);
+    const dispatch = useDispatch();
   const { data, loading, error } = useFetch(`/products/${id}?populate=*`);
 
   return (
@@ -79,7 +84,7 @@ export default function Product() {
                 )
               }
             >
-              <AddShoppingCartIcon /> ADD TO CART
+              <AddShoppingCartIcon /> 
             </button>
             <div className="flex gap-5">
               <div className=" flex items-center gap-2 text-[#2879fe] text-sm">
