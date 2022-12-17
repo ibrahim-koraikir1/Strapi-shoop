@@ -15,10 +15,7 @@ export default function Navbar() {
       <div className=" flex items-center justify-between py-[10px] px-[30px] ">
         <div className=" flex items-center gap-6  text-base">
            <Link className ="link" to="/">shoop</Link>
-          <div className="item">
-            <span>USD</span>
-            <KeyboardArrowDownIcon />
-          </div>
+          
         
         </div>
         <div className="  flex items-center gap-6  ml-10 ">
